@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/theme_color"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <ImageView
+            android:id="@+id/id_iv_setting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="12dp"
+            android:src="@mipmap/nav_ico_set" />
+
+        <TextView
+            android:textSize="18sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="通讯录"
+            android:textColor="@color/white" />
+
+        <ImageView
+            android:id="@+id/id_iv_search_contact"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="12dp"
+            android:src="@mipmap/nav_ico_search_white" />
+    </RelativeLayout>
+
+    <RadioGroup
+        android:id="@+id/rg_group"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#F5F5F5"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/id_up_part"
+            style="@style/BottomTabStyle"
+            android:background="@drawable/selector_radio_checked"
+            android:checked="true"
+            android:text="上属单位"
+            android:textColor="@color/btn_text_selector" />
+
+        <RadioButton
+            android:id="@+id/id_down_part"
+            style="@style/BottomTabStyle"
+            android:background="@drawable/selector_radio_checked"
+            android:text="下属单位"
+            android:textColor="@color/btn_text_selector" />
+    </RadioGroup>
+
+    <FrameLayout
+        android:id="@+id/id_contact_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

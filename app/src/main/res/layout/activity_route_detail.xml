@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/theme_color"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+
+        <ImageView
+            android:id="@+id/id_iv_title_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingLeft="8dp"
+            android:src="@mipmap/title_back" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="G1-五路居线段-河北段"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/radio_line" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/white">
+
+        <info.hoang8f.android.segmented.SegmentedGroup
+            android:id="@+id/view_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="16dp"
+            android:background="@drawable/shape_button_round2"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/id_day"
+                style="@style/RadioButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:minWidth="60dp"
+                android:text="分日" />
+
+            <RadioButton
+                android:id="@+id/id_month"
+                style="@style/RadioButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minWidth="60dp"
+                android:text="月度" />
+
+            <RadioButton
+                android:id="@+id/id_year"
+                style="@style/RadioButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minWidth="60dp"
+                android:text="年度" />
+
+        </info.hoang8f.android.segmented.SegmentedGroup>
+
+        <TextView
+            android:id="@+id/id_tv_time_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:drawablePadding="8dp"
+            android:drawableRight="@mipmap/global_ico_more"
+            android:gravity="center"
+            android:paddingLeft="16dp"
+            android:text="2016-1-24"
+            android:textColor="@color/theme_color" />
+
+    </RelativeLayout>
+
+    <com.github.mikephil.charting.charts.BarChart
+        android:id="@+id/id_chart_bar"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginBottom="6dp"
+        android:visibility="gone" />
+
+    <com.github.mikephil.charting.charts.LineChart
+        android:id="@+id/id_chart_line"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginBottom="6dp" />
+
+  <!--  <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/radio_line" />-->
+
+    <RadioGroup
+        android:id="@+id/rg_group_des"
+        android:layout_width="280dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="12dp"
+        android:layout_toRightOf="@+id/id_tv_time"
+        android:background="@color/theme_color"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/id_auto_car"
+            style="@style/BottomTabStyle"
+            android:background="@drawable/selector_radio_no_check"
+            android:checked="true"
+            android:text="全线"
+            android:textColor="@drawable/selector_radio_text" />
+
+        <RadioButton
+            android:id="@+id/id_ck_car"
+            style="@style/BottomTabStyle"
+            android:layout_marginLeft="6dp"
+            android:background="@drawable/selector_radio_no_check"
+            android:text="分省"
+            android:textColor="@drawable/selector_radio_text" />
+
+        <RadioButton
+            android:id="@+id/id_hc_car"
+            style="@style/BottomTabStyle"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="6dp"
+            android:background="@drawable/selector_radio_no_check"
+            android:text="分地市"
+            android:textColor="@drawable/selector_radio_text" />
+
+        <RadioButton
+            android:id="@+id/id_crowd"
+            style="@style/BottomTabStyle"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="6dp"
+            android:background="@drawable/selector_radio_no_check"
+            android:text="分区县"
+            android:textColor="@drawable/selector_radio_text" />
+
+    </RadioGroup>
+
+
+</LinearLayout>

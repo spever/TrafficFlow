@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/theme_color"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="主路网交通量"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/radio_line" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="86dp">
+
+        <TextView
+            android:id="@+id/id_tv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignParentTop="true"
+            android:drawablePadding="8dp"
+            android:drawableRight="@mipmap/global_ico_more"
+            android:gravity="center"
+            android:paddingLeft="16dp"
+            android:text="2016-1-24"
+            android:textColor="@color/white" />
+
+        <RadioGroup
+            android:id="@+id/rg_group_des"
+            android:layout_width="280dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/id_tv_time"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="16dp"
+            android:background="@color/theme_color"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/id_auto_car"
+                style="@style/BottomTabStyle"
+                android:background="@drawable/selector_radio_no_check"
+                android:checked="true"
+                android:text="机动车"
+                android:textColor="@drawable/selector_radio_text" />
+
+            <RadioButton
+                android:id="@+id/id_ck_car"
+                style="@style/BottomTabStyle"
+                android:layout_marginLeft="8dp"
+                android:background="@drawable/selector_radio_no_check"
+                android:text="客车比"
+                android:textColor="@drawable/selector_radio_text" />
+
+            <RadioButton
+                android:id="@+id/id_hc_car"
+                style="@style/BottomTabStyle"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="8dp"
+                android:background="@drawable/selector_radio_no_check"
+                android:text="货车比"
+                android:textColor="@drawable/selector_radio_text" />
+
+            <RadioButton
+                android:id="@+id/id_crowd"
+                style="@style/BottomTabStyle"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="8dp"
+                android:background="@drawable/selector_radio_no_check"
+                android:text="拥挤度"
+                android:textColor="@drawable/selector_radio_text" />
+
+        </RadioGroup>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/radio_line" />
+
+    <!--<com.handmark.pulltorefresh.library.PullToRefreshExpandableListView-->
+        <!--android:id="@+id/id_explistview"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"/>-->
+
+</LinearLayout>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <!-- 底部菜单页面 -->
+    <FrameLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+    </FrameLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#D2D2D2" />
+
+    <RadioGroup
+        android:id="@+id/rg_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/theme_color"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/id_station"
+            style="@style/BottomTabStyle"
+            android:checked="true"
+            android:background="@drawable/selector_radio_nav"
+            android:drawableTop="@mipmap/tab_ico_site_nor"
+            android:text="站点" />
+
+        <RadioButton
+            android:id="@+id/id_routeline"
+            style="@style/BottomTabStyle"
+            android:checked="false"
+            android:background="@drawable/selector_radio_nav"
+            android:drawableTop="@mipmap/tab_ico_way_nor"
+            android:text="路线" />
+
+        <RadioButton
+            android:id="@+id/id_district"
+            style="@style/BottomTabStyle"
+            android:layout_height="match_parent"
+            android:background="@drawable/selector_radio_nav"
+            android:drawableTop="@mipmap/tab_ico_administrative_nor"
+            android:text="行政区" />
+
+        <RadioButton
+            android:id="@+id/id_main_line"
+            style="@style/BottomTabStyle"
+            android:layout_height="match_parent"
+            android:background="@drawable/selector_radio_nav"
+            android:drawableTop="@mipmap/tab_ico_country_nor"
+            android:text="主路网" />
+
+        <RadioButton
+            android:id="@+id/id_mine"
+            style="@style/BottomTabStyle"
+            android:background="@drawable/selector_radio_nav"
+            android:drawableTop="@mipmap/tab_ico_my_nor"
+            android:text="我的" />
+    </RadioGroup>
+</LinearLayout>

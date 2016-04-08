@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/theme_color"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:paddingLeft="8dp"
+            android:src="@mipmap/on_line" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="55dp"
+            android:layout_marginStart="55dp"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/id_tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:text="王府庄倒班神马什么 "
+                android:textColor="@color/white" />
+
+            <TextView
+                android:id="@+id/id_tv_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="GSUOSUS7897987"
+                android:textColor="@color/text_rank_item" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+
+        <RadioGroup
+            android:id="@+id/rg_group"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#F5F5F5"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/id_minutes"
+                style="@style/BottomTabStyle"
+                android:background="@drawable/selector_radio_checked"
+                android:checked="true"
+                android:text="5分钟"
+                android:textColor="@color/btn_text_selector" />
+
+            <RadioButton
+                android:id="@+id/id_hour"
+                style="@style/BottomTabStyle"
+                android:background="@drawable/selector_radio_checked"
+                android:text="24小时"
+                android:textColor="@color/btn_text_selector" />
+
+            <RadioButton
+                android:id="@+id/id_day"
+                style="@style/BottomTabStyle"
+                android:layout_height="match_parent"
+                android:background="@drawable/selector_radio_checked"
+                android:text="每日"
+                android:textColor="@color/btn_text_selector" />
+
+            <RadioButton
+                android:id="@+id/id_month"
+                style="@style/BottomTabStyle"
+                android:layout_height="match_parent"
+                android:background="@drawable/selector_radio_checked"
+                android:text="月度"
+                android:textColor="@color/btn_text_selector" />
+
+            <RadioButton
+                android:id="@+id/id_year"
+                style="@style/BottomTabStyle"
+                android:background="@drawable/selector_radio_checked"
+                android:text="年度"
+                android:textColor="@color/btn_text_selector" />
+        </RadioGroup>
+    </LinearLayout>
+
+    <!--<RelativeLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="40dp"-->
+        <!--android:layout_marginBottom="8dp"-->
+        <!--android:layout_marginTop="8dp">-->
+
+        <!--<RadioGroup-->
+            <!--android:id="@+id/rg_group_des"-->
+            <!--android:layout_width="200dp"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_marginLeft="16dp"-->
+            <!--android:background="@color/theme_color"-->
+            <!--android:gravity="center"-->
+            <!--android:orientation="horizontal">-->
+
+            <!--<RadioButton-->
+
+                <!--android:id="@+id/id_broken"-->
+                <!--style="@style/BottomTabStyle"-->
+                <!--android:background="@drawable/selector_radio_no_check"-->
+                <!--android:checked="true"-->
+                <!--android:text="断面"-->
+                <!--android:textColor="@drawable/selector_radio_text" />-->
+
+            <!--<RadioButton-->
+                <!--android:id="@+id/id_up"-->
+                <!--style="@style/BottomTabStyle"-->
+                <!--android:layout_marginLeft="8dp"-->
+                <!--android:background="@drawable/selector_radio_no_check"-->
+                <!--android:text="上行"-->
+                <!--android:textColor="@drawable/selector_radio_text" />-->
+
+            <!--<RadioButton-->
+                <!--android:id="@+id/id_dowm"-->
+                <!--style="@style/BottomTabStyle"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:layout_marginLeft="8dp"-->
+                <!--android:background="@drawable/selector_radio_no_check"-->
+                <!--android:text="下行"-->
+                <!--android:textColor="@drawable/selector_radio_text" />-->
+            <!--&lt;!&ndash;android:textColor="@color/btn_text_selector" &ndash;&gt;-->
+
+
+        <!--</RadioGroup>-->
+
+        <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_alignParentTop="true"-->
+            <!--android:layout_marginRight="8dp"-->
+            <!--android:layout_toLeftOf="@+id/imageView2"-->
+            <!--android:layout_toStartOf="@+id/imageView2"-->
+            <!--android:gravity="center"-->
+            <!--android:text="2016-1-24"-->
+            <!--android:textColor="@color/white" />-->
+
+        <!--<ImageView-->
+            <!--android:id="@+id/imageView2"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_alignParentEnd="true"-->
+            <!--android:layout_alignParentRight="true"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:layout_gravity="center"-->
+            <!--android:layout_marginRight="8dp"-->
+            <!--android:src="@mipmap/global_ico_more" />-->
+
+    <!--</RelativeLayout>-->
+
+    <FrameLayout
+        android:id="@+id/id_label_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>
