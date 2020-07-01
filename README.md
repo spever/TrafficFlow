@@ -1,7 +1,7 @@
 # TrafficFlow case
 
 #### 涉及：
-- MPAndroidChart
+- [MPAndroidChart]("https://github.com/PhilJay/MPAndroidChart")
 - xlistview
 - pulltorefresh
 - Baidu地图SDk
