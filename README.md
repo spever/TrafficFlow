@@ -5,3 +5,4 @@
 - xlistview
 - pulltorefresh
 - Baidu地图SDk
+- imageLoade
