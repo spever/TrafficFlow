@@ -4,3 +4,4 @@
 - MPAndroidChart
 - xlistview
 - pulltorefresh
+- Baidu地图SDk
