@@ -1,6 +1,6 @@
 # TrafficFlow case
 
 #### 涉及：
-MPAndroidChart
-xlistview
-pulltorefresh
+- MPAndroidChart
+- xlistview
+- pulltorefresh
